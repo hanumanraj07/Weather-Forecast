@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="input-search"><input class="inputCity" type="text"> <button class="btn"><i
+                    class="fa fa-search"></i></button></div>
+        <div class="heading">
+            <h1 id="city-name">
+                Loding...
+            </h1>
+        </div>
+        <div class="topinfo">
+            <div>
+                <header class="location-header">
+
+                    <p class="region-info">Region</p>
+                    <p class="country">Country</p>
+                    <p class="datetime"><i class="far fa-clock"></i> Time --</p>
+                </header>
+            </div>
+            <div>
+                <header class="location-header">
+
+                    <p class="timezone">Time Zone</p>
+                    <p class="localtime">Time Epoch: <span class="localtime1" id="epoch" >--</span></p>
+                    <p class="cord">Latitude: <span id="lat" class="localtime1">--</span> Longitude: <span id="lon" class="localtime1">--</span></p>
+                </header>
+            </div>
+        </div>
+
+        <section class="current-weather">
+            <div class="weather-main">
+                <div class="temp-display">
+                    <img id="weather-icon" src="" alt="Weather Condition">
+                    <span id="temperature">--</span><span class="unit">°C</span>
+                </div>
+                <p id="condition-text">--</p>
+                <p class="feels-like">Feels like <span id="feelslike">--</span>°C</p>
+                <p class="feels-like">Last Updated: <span id="lastUpdate">--</span></p>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-card">
+                    <i class="fas fa-wind"></i>
+                    <p>Wind</p>
+                    <div><span id="windkm">--</span> kph</div>
+                    <div><span id="windmp">--</span> mph</div>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-cloud-rain"></i>
+                    <p>Precipitation</p>
+                    <div><span id="precipmm">--</span> mm</div>
+                    <div><span id="precipin">--</span> in</div>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-smog"></i>
+                    <p>Dew Point</p>
+                    <div><span id="dewc">--</span> c</div>
+                    <div><span id="dewf">--</span> f</div>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-tint"></i>
+                    <p>Humidity</p>
+                    <div><span id="humidity">--</span> %</div>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-eye"></i>
+                    <p>Visibility</p>
+                    <div><span id="visibilitykm">-- </span>km</div>
+                    <div><span id="visibilitym">--</span> miles</div>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <p>Pressure</p>
+                    <div><span id="pressuremb">-- </span>mb</div>
+                    <div><span id="pressurein">-- </span>in</div>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-sun"></i>
+                    <p>UV Index</p>
+                    <div><span id="uv-indexc">--</span>°C</div>
+                    <div><span id="uv-indexf">--</span> F</div>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-cloud"></i>
+                    <p>Cloud Cover</p>
+                    <div><span id="cloud">--</span> %</div>
+                     
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-tornado"></i>
+                    <p>Gust Wind</p>
+                    <div><span id="gustm">--</span> mph</div>
+                    <div><span id="gustk">--</span> kph</div>
+                     
+                </div>
+            </div>
+        </section>
+
+        <section class="air-quality">
+            <h3>Air Quality Index</h3>
+            <div class="aqi-grid">
+                <div class="aqi-item">
+                    <span>CO</span>
+                    <strong id="co">--</strong>
+                </div>
+                <div class="aqi-item">
+                    <span>NO2</span>
+                    <strong id="no2">--</strong>
+                </div>
+                <div class="aqi-item">
+                    <span>O3</span>
+                    <strong id="o3">--</strong>
+                </div>
+                <div class="aqi-item">
+                    <span>PM2.5</span>
+                    <strong id="pm2">--</strong>
+                </div>
+                <div class="aqi-item">
+                    <span>PM10</span>
+                    <strong id="pm10">--</strong>
+                </div>
+                <div class="aqi-item">
+                    <span>SO2</span>
+                    <strong id="so2">--</strong>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

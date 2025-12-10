@@ -1,0 +1,223 @@
+:root {
+    --primary-bg: #1e293b;
+    --card-bg: #334155;
+    --text-color: #f8fafc;
+    --accent-color: #38bdf8;
+    --secondary-text: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Header */
+.location-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#city-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.region-info {
+    color: var(--secondary-text);
+    font-size: 1rem;
+    margin-top: 5px;
+}
+.timezone {
+    color: var(--secondary-text);
+    font-size: 1rem;
+    margin-top: 5px;
+}
+.cord {
+    color: var(--secondary-text);
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.datetime {
+    color: var(--accent-color);
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.localtime1 {
+    color: var(--accent-color);
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Current Weather Main */
+.weather-main {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+}
+
+.temp-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temp-display img {
+    width: 64px;
+    height: 64px;
+}
+
+#temperature {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.unit {
+    font-size: 1.5rem;
+    margin-top: -20px;
+    color: var(--accent-color);
+}
+
+#condition-text {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.feels-like {
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+}
+
+/* Details Grid */
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.detail-card {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.detail-card i {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.detail-card p {
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+}
+
+.detail-card span {
+    font-weight: bold;
+}
+
+/* Air Quality */
+.air-quality {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.air-quality h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+}
+
+.aqi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.aqi-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.aqi-item span {
+    color: var(--secondary-text);
+    font-size: 0.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #city-name {
+        font-size: 2rem;
+    }
+}
+input{
+    width: 15vw;
+    height: 5vh;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding-left: 2vw;
+}
+
+button{
+    width: 2.8vw;
+    height: 5vh;
+    border-radius: 30px;
+    border: none;
+     transition: color 0.3ms ease;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #94a3b8; 
+}
+.topinfo{
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+}
+.input-search{
+    display: flex;
+    justify-self: center;
+    gap: 1vw;
+}
+.heading{
+    display: flex;
+    justify-self: center;
+}
