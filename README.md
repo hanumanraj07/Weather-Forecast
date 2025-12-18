@@ -23,7 +23,7 @@ The site uses:
 
 📍 Optionally detect current location weather
 
-🔁 Updates automatically with each search
+🔁 Updates automatically with each search 
 
 🎨 Clean UI with icons and responsive design
 
